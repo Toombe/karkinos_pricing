@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const thirdPrice = secondPrice / 4;
 
         // Update price displays
-        priceDisplays[0].textContent = `${Math.round(firstPrice).toLocaleString()} BBs`;
-        priceDisplays[1].textContent = `${Math.round(secondPrice).toLocaleString()} Hard Poly`;
-        priceDisplays[2].textContent = `${Math.round(thirdPrice).toLocaleString()} Black Pearls`;
+        priceDisplays[0].textContent = `${Math.round(firstPrice).toLocaleString()}`;
+        priceDisplays[1].textContent = `${Math.round(secondPrice).toLocaleString()}`;
+        priceDisplays[2].textContent = `${Math.round(thirdPrice).toLocaleString()}`;
     }
 
     inputs.forEach(input => {
