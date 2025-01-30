@@ -32,30 +32,50 @@ body {
     line-height: 1.5;
 }
 
-.input-container {
+.input-group {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin: 2rem 0;
     flex-wrap: wrap;
 }
 
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-label {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.max-indicator {
+    color: #666;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
 .number-input {
-    width: min(30%, 120px);
-    min-width: 80px;
+    width: 120px;
     padding: 0.8rem;
     border: 2px solid #ddd;
     border-radius: 8px;
     text-align: center;
     font-size: clamp(1rem, 4vw, 1.2rem);
-    -webkit-appearance: none;
+    -webkit-appearance: textfield;
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: inner-spin-button;
+    opacity: 1;
     margin: 0;
+    cursor: pointer;
 }
 
 .price-container {
@@ -95,35 +115,9 @@ body {
     max-width: 32px;
 }
 
-.input-group {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.input-label {
-    font-weight: 600;
-    color: #444;
-    font-size: 0.9rem;
-}
-
-.max-indicator {
-    color: #666;
-    font-weight: normal;
-    font-size: 0.8em;
-}
-
 /* Mobile-specific adjustments */
 @media (max-width: 600px) {
-    .input-container {
+    .input-group {
         flex-direction: column;
         align-items: center;
     }
