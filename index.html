@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Resource Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Resource Calculator</h1>
+            <div class="description">
+                <p>Enter values between 0-158 in the fields below. Total must not exceed 158.</p>
+            </div>
+        </header>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <label class="input-label">Melee <span class="max-indicator">(Max 0)</span></label>
+            <input type="number" class="number-input" data-type="melee" value="0">
+          </div>
+          <div class="input-wrapper">
+            <label class="input-label">HP <span class="max-indicator">(Max 0)</span></label>
+            <input type="number" class="number-input" data-type="hp" value="0">
+          </div>
+          <div class="input-wrapper">
+            <label class="input-label">Weight <span class="max-indicator">(Max 0)</span></label>
+            <input type="number" class="number-input" data-type="weight" value="0">
+          </div>
+        </div>
+
+        <div class="price-container">
+            <div class="price-card">
+                <h3 class="currency-header">
+                    <img src="images/Berrybush_Seeds.png" alt="BBs" class="currency-icon">
+                    BBs
+                </h3>
+                <p id="price1">0 BBs</p>
+            </div>
+            <div class="price-card">
+                <h3 class="currency-header">
+                    <img src="images/Polymer.png" alt="Hard Poly" class="currency-icon">
+                    Hard Poly
+                </h3>
+                <p id="price2">0 Hard Poly</p>
+            </div>
+            <div class="price-card">
+                <h3 class="currency-header">
+                    <img src="images/Black_Pearl.png" alt="Black Pearls" class="currency-icon">
+                    Black Pearls
+                </h3>
+                <p id="price3">0 Black Pearls</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html
