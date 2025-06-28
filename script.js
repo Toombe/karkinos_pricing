@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Configuration - set your maximums here
     const MAX_VALUES = {
-        melee: 109,    // Set maximum for Melee
+        melee: 127,    // Set maximum for Melee
         hp: 50,       // Set maximum for HP
-        weight: 54    // Set maximum for Weight
+        weight: 77    // Set maximum for Weight
     };
 
     const TOTAL_MAX = 158;
